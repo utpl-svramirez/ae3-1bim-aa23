@@ -24,6 +24,37 @@ VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, cedula, edad)
 # ejecutar el SQL
 cursor.execute(cadena_sql)
 
+
+nombre = "Adriana"
+apellido = "Torres"
+cedula = "1011019092"
+edad = 30
+cadena_sql = """INSERT INTO Autor (nombre, apellido, cedula, edad) \
+VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, cedula, edad)
+
+# ejecutar el SQL
+cursor.execute(cadena_sql)
+
+nombre = "Jose"
+apellido = "Jara"
+cedula = "1011019093"
+edad = 30
+cadena_sql = """INSERT INTO Autor (nombre, apellido, cedula, edad) \
+VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, cedula, edad)
+
+# ejecutar el SQL
+cursor.execute(cadena_sql)
+
+nombre = "Jose"
+apellido = "Paz"
+cedula = "1011019094"
+edad = 30
+cadena_sql = """INSERT INTO Autor (nombre, apellido, cedula, edad) \
+VALUES ('%s', '%s', '%s', %d);""" % (nombre, apellido, cedula, edad)
+
+# ejecutar el SQL
+cursor.execute(cadena_sql)
+
 # confirmar los cambios a través del objeto importado de tip Connection
 conn.commit()
 
